@@ -18,29 +18,26 @@
   font-size: 1rem;
 }
 html {
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Fraunces', serif;
-
+  font-family: "Montserrat", sans-serif;
+  font-family: "Fraunces", serif;
 }
 
 body {
   background-color: var(--Cream);
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Fraunces', serif;
-
+  font-family: "Montserrat", sans-serif;
+  font-family: "Fraunces", serif;
 }
 
-section{
+section {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 .Wraper {
   margin: auto;
   margin-top: 5rem;
+  margin-bottom: 3rem;
   display: flex;
-  flex-direction: row;
   width: 50%;
   border-radius: 1rem;
   justify-content: center;
@@ -52,28 +49,30 @@ section{
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
 } */
-.Box1,.Box2{
-width: 50%;
+.Box1,
+.Box2 {
+  width: 50%;
 }
-.Box1{
+.Box1 {
   background-image: url(./images/image-product-desktop.jpg);
   background-position: center;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
-background-repeat: no-repeat;
-background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.Box2{
+.Box2 {
   background-color: var(--White);
-padding: 3rem 0;
+  padding: 0 1rem;
 }
 article {
-  margin-top: 5rem;
+  margin-top: 1rem;
 }
 
 #sp1 {
   font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
 }
 .weeksp {
   padding: 0.5rem 1.2rem;
@@ -83,7 +82,6 @@ article {
 h1 {
   font-size: 2.6rem;
   font-family: "Fraunces", serif;
-width: 80%;
 }
 
 .heading {
@@ -93,11 +91,12 @@ width: 80%;
   padding: 0.2rem 1rem;
 }
 
-.paragraph p{
-  font-size: 1.4rem;
-  color: var(--Dark-cyan);
-font-weight: 100;
-
+.paragraph p {
+  font-weight: 100;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  word-spacing: 3px;
 }
 .price {
   padding: 1rem 0rem;
@@ -115,75 +114,198 @@ font-weight: 100;
   margin-left: 0rem;
 }
 #psp2 s {
-  font-weight: bold;
-  font-size: 1rem;
-  color: var(--Dark-cyan);
-position: relative;
-bottom: .5rem;
+  font-size: 0.8rem;
+  position: relative;
+  bottom: 0.5rem;
 }
 
 .btn {
   padding: 1rem 1rem;
   padding-bottom: 2rem;
+  text-align: center;
 }
 
 .btn button {
   padding: 0.9rem 0.4rem;
-  width: 22rem;
+  width: 100%;
   background-color: var(--Very-dark-blue);
   color: var(--White);
-border-radius: .5rem;
-background-color: var(--Dark-cyan);
+  border-radius: 0.5rem;
+  background-color: var(--Dark-cyan);
+  font-weight: bold;
+  font-size: 1.3rem;
 }
 
-@media only screen and (min-width: 360px) and (max-width: 800px) {
+button .icon {
+  font-size: 2rem;
+  position: relative;
+  top: 0.5rem;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 400px) {
   .Wraper {
     flex-direction: column;
-  width: 100%;
+    width: 100%;
+    padding: 0 2rem;
   }
   .weeksp {
     margin-top: 1rem;
   }
-/*   
-  .Box1 img{
-    border-radius: 0;
+
+  .Box1 {
+    height: 300px;
+    background-image: url(./images/image-product-mobile.jpg);
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 0;
+    background-position: top center;
   }
-  .Box1 img {
-    border-top-left-radius: .8rem;
-    border-top-right-radius: .8rem;
-    
-   
-  } */
-  
-  .Box1{
-    height: 700px;
-  border-top-right-radius: 1rem;
-  }
-  .Box1,.Box2{
+  .Box1,
+  .Box2 {
     width: 100%;
-  
+    padding: 0;
   }
-  .btn button{
-    width: 18rem;
+  .btn button {
+    width: 100%;
   }
-  article{
+
+  article {
+    margin-top: 1rem;
+  }
+  .paragraph p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    word-spacing: 3px;
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+  .Wraper {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 2rem;
+    margin-bottom: 3rem;
+  }
+  .weeksp {
     margin-top: 1rem;
   }
 
+  .Box1 {
+    height: 350px;
+    background-image: url(./images/image-product-mobile.jpg);
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 0;
+    background-position: top center;
+  }
+  .Box1,
+  .Box2 {
+    width: 100%;
+    padding: 0;
+  }
+  .btn button {
+    width: 100%;
+  }
+  .btn {
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+  }
+  article {
+    margin-top: 1rem;
+  }
+  .paragraph p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+
+    word-spacing: 3px;
+  }
+
+  #psp1 {
+    padding: 2rem 1rem;
+  }
 }
 
-@media only screen and (min-width:800px) and (max-width:1500px){
-  
-.Wraper{
-  width: 80%;
+@media only screen and (min-width: 601px) and (max-width: 700px) {
+  .Wraper {
+    width: 100%;
+    padding: 0 2rem;
+    margin-bottom: 3rem;
+  }
+  .weeksp {
+    margin-top: 1rem;
+  }
+
+  .Box1,
+  .Box2 {
+    width: 100%;
+    padding: 0;
+  }
+  .btn button {
+    width: 100%;
+  }
+  .btn {
+    margin-bottom: 2rem;
+  }
+  article {
+    margin-top: 1rem;
+  }
+  .paragraph p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    word-spacing: 3px;
+  }
+  .heading,
+  #sp1,
+  .paragraph {
+    padding: 0 0.5rem 0.5;
+  }
 }
-  .Box1{
-    width: 50%;
+
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
+  .Wraper {
+    width: 100%;
+    padding: 0 2rem;
+    margin-bottom: 3rem;
   }
-  .btn{
-    text-align: left;
+  .weeksp {
+    margin-top: 1rem;
   }
-  .btn button{
-    width: 17rem;
+
+  .Box1,
+  .Box2 {
+    width: 100%;
+  }
+  .btn button {
+    width: 100%;
+  }
+  .btn {
+    margin-bottom: 2rem;
+  }
+  article {
+    margin-top: 1rem;
+  }
+  .paragraph p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    word-spacing: 3px;
+  }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1500px) {
+  .Wraper {
+    width: 80%;
+  }
+
+  article {
+    margin-top: 0.5rem;
+  }
+  .btn {
+    text-align: center;
+  }
+  .btn button {
+    width: 96%;
+  }
+  .paragraph p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    word-spacing: 3px;
   }
 }
